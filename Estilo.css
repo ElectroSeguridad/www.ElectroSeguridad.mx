@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(200, 200, 200);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight:600;
+    padding-right:10px;
+}
+
+header a:hover{
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/Tablero_Control.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos .container{
+    height: 90vh;
+    text-align: center;
+    padding: 170px 12px;
+}
+
+#somos .container{
+    display: flex;
+    justify-content: center;
+}
+
+#somos .texto {
+    width: 45%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos .img-container{
+    background-image: url("imagenes/Tablero_3.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 475px;
+    width: 350px;
+}
+
+#somos .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#nosotros {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nosotros {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nosotros .container{
+    padding: 100px 0px;
+}
+
+#nosotros h2{
+    margin-top: 0;
+}
+
+#nosotros h2{
+    margin-top: 0;
+    font-size: 3.3em;
+}
+
+#nosotros p{
+    display: none;
+}
+
+
+#nosotros {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nosotros .container{
+    padding: 100px 0px;
+}
+
+#nosotros h2{
+    margin-top: 0;
+}
+
+#nosotros h2{
+    margin-top: 0;
+    font-size: 3.3em;
+}
+#nosotros p{
+    display: none;
+}
+
+#nosotros .cartas{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.cartas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(21, 51, 125),
+        rgba(61, 102, 204)
+    )
+}
+
+.cartas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb(21, 51, 125),
+        rgb(61, 102, 204)
+    )
+}
+
+.cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgb(21, 51, 125),
+        rgb(61, 102, 204)
+    )
+}
+
+#servicios .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#servicios li{
+    margin: 17px 0px;
+    font-weight: bold;
+}
+
+#nosotros .catalogo{
+    display: flex;
+    justify-content: center;
+}
+
+#nosotros p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nosotros h3{
+    margin-top: 0;
+}
+
+#nosotros .cartas{
+    padding: 40px;
+}
+
+#servicios {
+    background-image: url("imagenes/imagen_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+#servicios h2{
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+#servicios .container{
+    text-align: initial;
+}
+
+#servicios ul{
+    margin-left: 45px;
+}
+
+@media(min-width: 1200px) {
+    #servicios{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+#contactos h2{
+    font-size: 2.5em;
+}
+
+#contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 35vh;
+}
+
+#contactos h4{
+    font-size: 1.0em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .container {
+    justify-content: flex-end;
+}
